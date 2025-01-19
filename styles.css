@@ -1,0 +1,38 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid crimson;
+}
+
+:root {
+  --background-blue: #1992D4;
+  --background-gray: #E2E8F0;
+  --background-white: #FFFFFF;
+  --color-white: white;
+  --color-gray: #636363;
+  --color-dark: #000000;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*Layout*/
+.container {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+main {
+  grid-column: 2;
+}
+
+/*Navigation Bar*/
+.nav {
+  grid-row: 1/-1;
+  background-color: var(--background-blue);
+  color: var(--color-white);
+}/*# sourceMappingURL=styles.css.map */
